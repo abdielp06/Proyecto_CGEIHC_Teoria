@@ -1,0 +1,143 @@
+newmtl AmblemPorscheSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 23.00
+newmtl BodySG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.15 0.15 0.15
+Ns 61.10
+newmtl BodySG1
+illum 4
+Kd 0.09 0.09 0.09
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 58.49
+newmtl BodySG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl BodySG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 75.97
+newmtl BodySG5
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl BodySG6
+illum 4
+Kd 0.46 0.46 0.46
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.11 0.11 0.11
+Ns 98.00
+newmtl BodySG7
+illum 4
+Kd 0.02 0.02 0.02
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 23.00
+newmtl BodySG8
+illum 4
+Kd 0.01 0.01 0.01
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 23.00
+newmtl HeadlightsCOVERFBXASC046001SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 23.00
+newmtl HeadlightsCOVERSG
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl HeadlightsFBXASC046001SG
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 98.00
+newmtl PlaneFBXASC046016SG
+illum 4
+Kd 0.01 0.01 0.01
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 23.00
+newmtl RearlightsCOVERFBXASC046002SG
+illum 4
+Kd 0.80 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.92 1.00 1.00
+Ni 1.00
+Ks 0.07 0.00 0.00
+Ns 49.82
+newmtl RearlightsCOVERFBXASC046003SG
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 0.77 0.77 0.77
+Ni 1.00
+Ks 0.11 0.11 0.11
+Ns 83.66
+newmtl SignalsCoverSG
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 0.35 0.35 0.35
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl TEXTSG
+illum 4
+Kd 0.09 0.09 0.09
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.02 0.02 0.02
+Ns 23.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd janttto.png
+Ni 1.00

@@ -1,0 +1,242 @@
+newmtl BarraNw:base_material
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd fd8c783843f5_Barra_de_restaurant_texture_kd.png
+Ni 1.50
+Ks 0.50 0.50 0.50
+Ns 0.06
+newmtl Mesita:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd annie-spratt-kG-ZwDuQ8ME-unsplash.png
+Ni 1.00
+newmtl Mesita:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Sin_títuloGris.jpg
+Ni 1.00
+newmtl Refri:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fondo-muro-hormigon-liso-negro_53876-143074.avif.png
+Ni 1.00
+newmtl Refri:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Captura_de_pantalla_(2033).png
+Ni 1.00
+newmtl Silla:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd istockphoto-1167097199-612x612.png
+Ni 1.00
+newmtl Silla:lambert4SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd istockphoto-1167097199-612x612.png
+Ni 1.00
+newmtl Silla:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd desktop-wallpaper-5-solid-gray-light-grey-plain.png
+Ni 1.00
+newmtl Silla:lambert5SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd desktop-wallpaper-5-solid-gray-light-grey-plain.png
+Ni 1.00
+newmtl SillaComp:initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd newpokeball.png
+Ni 1.00
+newmtl SillaComp:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd istockphoto-1167097199-612x612.png
+Ni 1.00
+newmtl SillaComp:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd desktop-wallpaper-5-solid-gray-light-grey-plain.png
+Ni 1.00
+newmtl capsup:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd photo-1593005510509-d05b264f1c9c.png
+Ni 1.00
+newmtl estante:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pared-vacia-espacio-copia_1339-3031.avif.png
+Ni 1.00
+newmtl estante:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metallic-wavy-gradient-mesh-monochromatic-260nw-2286953987.webp.png
+Ni 1.00
+newmtl fach1:base_material
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd verde2(1).png
+Ni 1.50
+Ks 0.50 0.50 0.50
+Ns 0.06
+newmtl fach1:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd desktop-wallpaper-5-solid-gray-light-grey-plain.png
+Ni 1.00
+newmtl fach1:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pared-amarilla-clara_1258-105.avif.png
+Ni 1.00
+newmtl fach1:lambert8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tubo.png
+Ni 1.00
+newmtl fach1:lambert9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tubo.png
+Ni 1.00
+newmtl fach1:lambert10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tubo.png
+Ni 1.00
+newmtl fach1:lambert11SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd white-brick-wall-texture-background-260nw-2116251620.webp.png
+Ni 1.00
+newmtl fach1:lambert12SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd istockphoto-1167097199-612x612.png
+Ni 1.00
+newmtl fach1:lambert13SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd istockphoto-1167097199-612x612.png
+Ni 1.00
+newmtl fach1:lambert14SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd istockphoto-1167097199-612x612.png
+Ni 1.00
+newmtl fach1:lambert15SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd istockphoto-1167097199-612x612.png
+Ni 1.00
+newmtl fach1:lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd istockphoto-1167097199-612x612.png
+Ni 1.00
+newmtl fach1:lambert19SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tacos2.png
+Ni 1.00
+newmtl fach1:lambert21SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tacos2.png
+Ni 1.00
+newmtl fach1:lambert23SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd ajedrez.avif.png
+Ni 1.00
+newmtl marcos:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd desktop-wallpaper-5-solid-gray-light-grey-plain.png
+Ni 1.00
+newmtl mostaza:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pngtree-vibrant-mustard-yellow-paper-texture-background-image_13816411.png
+Ni 1.00
+newmtl vidrio:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd depositphotos_25397381-stock-illustration-smooth-gradient-background-sheet-of.webp.png
+Ni 1.00
+newmtl vidrio:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd desktop-wallpaper-5-solid-gray-light-grey-plain.png
+Ni 1.00
