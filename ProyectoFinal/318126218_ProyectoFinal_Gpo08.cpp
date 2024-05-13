@@ -24,6 +24,10 @@
 #include "Shader.h"
 #include "Camera.h"
 #include "Model.h"
+#include "Texture.h"
+
+// Para permitir lectura de archivos
+#pragma warning(disable:4996)
 
 // Function prototypes
 void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode);
@@ -96,20 +100,184 @@ float giroComp = 0;
 
 //termina auto
 
+// Archivos de keyframes
+char nombreArchivo1[] = "keyframes.txt";
+char nombreArchivo2[] = "keyframes2.txt";
+char nombreArchivo3[] = "Anim2keyframes.txt";
+char nombreArchivo4[] = "Anim2keyframes2.txt";
+char nombreArchivo5[] = "originalKeyframes.txt";
+char nombreArchivo6[] = "originalKeyframes2.txt";
+char nombreArchivo7[] = "originalAnim2keyframes.txt";
+char nombreArchivo8[] = "originalAnim2keyframes2.txt";
+
 // Animacion Porygon
 float	movPory_x = 0.0f,
-		movPory_y = 0.0f,
-		movPory_z = 0.0f,
-		orienta_Pory = 0.0f,
-		rotColaP = 0.0f,
-		rotPataDerP = 0.0f,
-		rotPataIzqP = 0.0f,
-		varPory = 0.0f;
+movPory_y = 0.0f,
+movPory_z = 0.0f,
+orienta_Pory = 0.0f,
+rotColaP = 0.0f,
+rotPataDerP = 0.0f,
+rotPataIzqP = 0.0f,
+varPory = 0.0f;
 
 bool	animPory = false;
 int		rutaPory = 0,
-		spritePory = 1;
+spritePory = 1;
 
+
+//Animacion Pokebola
+float	movPokebola_x = 0.0f,
+movPokebola_y = 0.0f,
+movPokebola_z = 0.0f,
+rotPokebola = 0.0f;
+
+bool	animPokebola = false;
+
+// Animacion Tiro Parabólico
+// v es qué tan lejos llega el objeto
+float	g = 9.81f, v = 22.0f, ang = 60.0f, t = 45.0f;
+double	n = 3.1416;
+float	i = 0.0f;
+
+// Animacion Lucario
+bool	animLucario = false;
+float	movLucario = 0.0f,
+rotCuerpo = 0.0f,
+rotCabezaY = 0.0f,
+rotCabezaZ = 0.0f,
+rotPiernaDer = 0.0f,
+rotPiernaIzq = 0.0f,
+rotAbDer = 0.0f,
+rotBrazoDer = 0.0f,
+rotAbIzq = 0.0f,
+rotEsfera = 0.0f,
+movPlataforma = 0.0f;
+
+float	movEsfera_x = 0.0f,
+movEsfera_y = 0.0f,
+movEsfera_z = 0.0f,
+varLucario = 0.0f;
+int		actPlataforma = 0;
+
+//Keyframes (Manipulación y dibujo)
+float	rotCuerpoInc = 0.0f,
+rotCabezaYInc = 0.0f,
+rotCabezaZInc = 0.0f,
+rotPiernaDerInc = 0.0f,
+rotPiernaIzqInc = 0.0f,
+rotAbDerInc = 0.0f,
+rotBrazoDerInc = 0.0f,
+rotAbIzqInc = 0.0f;
+
+// Variables para Keyframes
+#define MAX_FRAMES 20
+int i_max_steps = 60;
+int i_curr_steps = 0;
+typedef struct _frame
+{
+	//Variables para GUARDAR Key Frames
+	float	rotCuerpo;
+	float	rotCabezaY;
+	float	rotCabezaZ;
+	float	rotPiernaDer;
+	float	rotPiernaIzq;
+	float	rotAbDer;
+	float	rotBrazoDer;
+	float	rotAbIzq;
+
+}FRAME;
+
+FRAME KeyFrame[MAX_FRAMES];
+int FrameIndex;			//introducir número en caso de tener Key guardados
+bool play = false;
+int playIndex = 0;
+
+//función que carga keyframes guardados en un archivo de texto
+void cargarAnimacionKeyframes(char nombreArchivo[]) {
+	FILE* archivo;
+	float posicion;
+
+	if ((archivo = fopen(nombreArchivo, "rt")) == NULL)
+		printf("No se puedo abrir el archivo correctamente\n");
+
+	else {
+		if ((strcmp(nombreArchivo, "keyframes.txt") == 0) || (strcmp(nombreArchivo, "Anim2keyframes.txt") == 0) || (strcmp(nombreArchivo, "originalKeyframes.txt") == 0) || (strcmp(nombreArchivo, "originalAnim2Keyframes.txt") == 0))
+			FrameIndex = 9;
+		else
+			FrameIndex = 11;
+		for (int i = 0; i < FrameIndex; i++) {
+			fscanf(archivo, "%f", &posicion);
+			KeyFrame[i].rotCuerpo = posicion;
+			fscanf(archivo, "%f", &posicion);
+			KeyFrame[i].rotCabezaY = posicion;
+			fscanf(archivo, "%f", &posicion);
+			KeyFrame[i].rotCabezaZ = posicion;
+			fscanf(archivo, "%f", &posicion);
+			KeyFrame[i].rotPiernaDer = posicion;
+			fscanf(archivo, "%f", &posicion);
+			KeyFrame[i].rotPiernaIzq = posicion;
+			fscanf(archivo, "%f", &posicion);
+			KeyFrame[i].rotAbDer = posicion;
+			fscanf(archivo, "%f", &posicion);
+			KeyFrame[i].rotBrazoDer = posicion;
+			fscanf(archivo, "%f", &posicion);
+			KeyFrame[i].rotAbIzq = posicion;
+		}
+	}
+}
+
+// FUNCIONES PARA REALIZAR ANIMACION POR KEYFRAMES
+void saveFrame(void)
+{
+	//printf("frameindex %d\n", FrameIndex);
+	std::cout << "Frame Index = " << FrameIndex << std::endl;
+
+	KeyFrame[FrameIndex].rotCuerpo = rotCuerpo;
+	KeyFrame[FrameIndex].rotCabezaY = rotCabezaY;
+	KeyFrame[FrameIndex].rotCabezaZ = rotCabezaZ;
+	KeyFrame[FrameIndex].rotPiernaDer = rotPiernaDer;
+	KeyFrame[FrameIndex].rotPiernaIzq = rotPiernaIzq;
+	KeyFrame[FrameIndex].rotAbDer = rotAbDer;
+	KeyFrame[FrameIndex].rotBrazoDer = rotBrazoDer;
+	KeyFrame[FrameIndex].rotAbIzq = rotAbIzq;
+
+	std::cout << "rotCuerpo = " << rotCuerpo << std::endl;
+	std::cout << "rotCabezaY = " << rotCabezaY << std::endl;
+	std::cout << "rotCabezaZ = " << rotCabezaZ << std::endl;
+	std::cout << "rotPiernaDer = " << rotPiernaDer << std::endl;
+	std::cout << "rotPiernaIzq = " << rotPiernaIzq << std::endl;
+	std::cout << "rotAbDer = " << rotAbDer << std::endl;
+	std::cout << "rotBrazoDer = " << rotBrazoDer << std::endl;
+	std::cout << "rotAbIzq = " << rotAbIzq << std::endl;
+
+	FrameIndex++;
+}
+
+void resetElements(void)
+{
+	rotCuerpo = KeyFrame[0].rotCuerpo;
+	rotCabezaY = KeyFrame[0].rotCabezaY;
+	rotCabezaZ = KeyFrame[0].rotCabezaZ;
+	rotPiernaDer = KeyFrame[0].rotPiernaDer;
+	rotPiernaIzq = KeyFrame[0].rotPiernaIzq;
+	rotAbDer = KeyFrame[0].rotAbDer;
+	rotBrazoDer = KeyFrame[0].rotBrazoDer;
+	rotAbIzq = KeyFrame[0].rotAbIzq;
+
+}
+
+void interpolation(void)
+{
+	rotCuerpoInc = (KeyFrame[playIndex + 1].rotCuerpo - KeyFrame[playIndex].rotCuerpo) / i_max_steps;
+	rotCabezaYInc = (KeyFrame[playIndex + 1].rotCabezaY - KeyFrame[playIndex].rotCabezaY) / i_max_steps;
+	rotCabezaZInc = (KeyFrame[playIndex + 1].rotCabezaZ - KeyFrame[playIndex].rotCabezaZ) / i_max_steps;
+	rotPiernaDerInc = (KeyFrame[playIndex + 1].rotPiernaDer - KeyFrame[playIndex].rotPiernaDer) / i_max_steps;
+	rotPiernaIzqInc = (KeyFrame[playIndex + 1].rotPiernaIzq - KeyFrame[playIndex].rotPiernaIzq) / i_max_steps;
+	rotAbDerInc = (KeyFrame[playIndex + 1].rotAbDer - KeyFrame[playIndex].rotAbDer) / i_max_steps;
+	rotBrazoDerInc = (KeyFrame[playIndex + 1].rotBrazoDer - KeyFrame[playIndex].rotBrazoDer) / i_max_steps;
+	rotAbIzqInc = (KeyFrame[playIndex + 1].rotAbIzq - KeyFrame[playIndex].rotAbIzq) / i_max_steps;
+
+}
 
 glm::vec3 doorPivot = glm::vec3(0.0f, 1.0f, 0.0f);
 glm::vec3 cucharaPivot = glm::vec3(0.0f, 0.0f, 1.0f);
@@ -147,7 +315,7 @@ int main()
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
 	// Create a GLFWwindow object that we can use for GLFW's functions
-	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "PROYECTO FINAL - NARUTO - 318126218 ", nullptr, nullptr);
+	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "PROYECTO FINAL - Centro Comercial - Equipo 9 ", nullptr, nullptr);
 
 	if (nullptr == window)
 	{
@@ -189,6 +357,7 @@ int main()
 	Shader lightingShader("Shaders/lighting.vs", "Shaders/lighting.frag");
 	Shader lampShader("Shaders/lamp.vs", "Shaders/lamp.frag");
 	Shader Anim("Shaders/anim.vs", "Shaders/anim.frag");
+	Shader SkyBoxshader("Shaders/SkyBox.vs", "Shaders/SkyBox.frag");
 	Shader Humo("Shaders/animHumo.vs", "Shaders/animHumo.frag");
 	Shader AnimGlobo("Shaders/animGlobo.vs", "Shaders/animGlobo.frag");
 	Shader Estatica("Shaders/animPantalla.vs", "Shaders/animPantalla.frag");
@@ -226,7 +395,6 @@ int main()
 	Model carro3((char*)"Models/ProyectoFinal/carro3.obj");
 	Model carro4((char*)"Models/ProyectoFinal/carro4.obj");
 	Model carro5((char*)"Models/ProyectoFinal/carro5.obj");
-	Model escaleras1((char*)"Models/ProyectoFinal/escaleras1.obj");
 	Model pokemon((char*)"Models/ProyectoFinal/pokemon.obj");
 	Model sp((char*)"Models/ProyectoFinal/segundopiso1.obj");
 	Model sp2((char*)"Models/ProyectoFinal/segundopiso2.obj");
@@ -268,18 +436,81 @@ int main()
 	Model bdb1((char*)"Models/ProyectoFinal/botebasura1.obj");
 	Model bdb2((char*)"Models/ProyectoFinal/botebasura2.obj");
 	Model gasolinera((char*)"Models/ProyectoFinal/gasolinera.obj");
-	
-
-
-
 	Model porygonCabeza((char*)"Models/Porygon/PorygonCabeza.obj");
 	Model porygonCuerpo((char*)"Models/Porygon/PorygonCuerpo.obj");
 	Model porygonCola((char*)"Models/Porygon/PorygonCola.obj");
 	Model porygonPataDer((char*)"Models/Porygon/PorygonPataDer.obj");
 	Model porygonPataIzq((char*)"Models/Porygon/PorygonPataIzq.obj");
+	Model pokebola((char*)"Models/Pokebola/pokebola.obj");
+	Model cuerpoLucario((char*)"Models/Lucario/cuerpo.obj");
+	Model cabezaLucario((char*)"Models/Lucario/cabeza.obj");
+	Model antebrazoDerLucario((char*)"Models/Lucario/antebrazoDer.obj");
+	Model brazoDerLucario((char*)"Models/Lucario/brazoDer.obj");
+	Model antebrazoIzqLucario((char*)"Models/Lucario/antebrazoIzq.obj");
+	Model brazoIzqLucario((char*)"Models/Lucario/brazoIzq.obj");
+	Model piernaDerLucario((char*)"Models/Lucario/piernaDer.obj");
+	Model piernaIzqLucario((char*)"Models/Lucario/piernaIzq.obj");
+	Model esfera((char*)"Models/Lucario/auraEsfera.obj");
+	Model plataforma((char*)"Models/Lucario/Plataforma.obj");
 
 
+	for (int i = 0; i < MAX_FRAMES; i++)
+	{
+		KeyFrame[i].rotCuerpo = 0;
+		KeyFrame[i].rotCabezaY = 0;
+		KeyFrame[i].rotCabezaZ = 0;
+		KeyFrame[i].rotPiernaDer = 0;
+		KeyFrame[i].rotPiernaIzq = 0;
+		KeyFrame[i].rotAbDer = 0;
+		KeyFrame[i].rotBrazoDer = 0;
+		KeyFrame[i].rotAbIzq = 0;
+	}
 
+
+	GLfloat skyboxVertices[] = {
+		// Positions
+		-1.0f,  1.0f, -1.0f,
+		-1.0f, -1.0f, -1.0f,
+		1.0f, -1.0f, -1.0f,
+		1.0f, -1.0f, -1.0f,
+		1.0f,  1.0f, -1.0f,
+		-1.0f,  1.0f, -1.0f,
+
+		-1.0f, -1.0f,  1.0f,
+		-1.0f, -1.0f, -1.0f,
+		-1.0f,  1.0f, -1.0f,
+		-1.0f,  1.0f, -1.0f,
+		-1.0f,  1.0f,  1.0f,
+		-1.0f, -1.0f,  1.0f,
+
+		1.0f, -1.0f, -1.0f,
+		1.0f, -1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f, -1.0f,
+		1.0f, -1.0f, -1.0f,
+
+		-1.0f, -1.0f,  1.0f,
+		-1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f, -1.0f,  1.0f,
+		-1.0f, -1.0f,  1.0f,
+
+		-1.0f,  1.0f, -1.0f,
+		1.0f,  1.0f, -1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		-1.0f,  1.0f,  1.0f,
+		-1.0f,  1.0f, -1.0f,
+
+		-1.0f, -1.0f, -1.0f,
+		-1.0f, -1.0f,  1.0f,
+		1.0f, -1.0f, -1.0f,
+		1.0f, -1.0f, -1.0f,
+		-1.0f, -1.0f,  1.0f,
+		1.0f, -1.0f,  1.0f
+	};
 
 
 	// Set up vertex data (and buffer(s)) and attribute pointers
@@ -430,10 +661,32 @@ int main()
 	// Set texture units
 	lightingShader.Use();
 	glUniform1i(glGetUniformLocation(lightingShader.Program, "material.diffuse"), 0);
-	glUniform1i(glGetUniformLocation(lightingShader.Program, "material.specular"), 1);
+	//glUniform1i(glGetUniformLocation(lightingShader.Program, "material.specular"), 1);
+
+	//SkyBox
+	GLuint skyboxVBO, skyboxVAO;
+	glGenVertexArrays(1, &skyboxVAO);
+	glGenBuffers(1, &skyboxVBO);
+	glBindVertexArray(skyboxVAO);
+	glBindBuffer(GL_ARRAY_BUFFER, skyboxVBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(skyboxVertices), &skyboxVertices, GL_STATIC_DRAW);
+	glEnableVertexAttribArray(0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (GLvoid*)0);
+
+
+	vector<const GLchar*> faces;
+	faces.push_back("SkyBox/2left.tga");
+	faces.push_back("SkyBox/2right.tga");
+
+	faces.push_back("SkyBox/2top.tga");
+	faces.push_back("SkyBox/2bottom.tga");
+	faces.push_back("SkyBox/2back.tga");
+	faces.push_back("SkyBox/2front.tga");
+
+	GLuint cubemapTexture = TextureLoading::LoadCubemap(faces);
 
 	glm::mat4 projection = glm::perspective(camera.GetZoom(), (GLfloat)SCREEN_WIDTH / (GLfloat)SCREEN_HEIGHT, 0.1f, 1000.0f);
-	lightingShader.Use();
+	//lightingShader.Use();
 	glUniform1i(glGetUniformLocation(lightingShader.Program, "material.diffuse"), 0);
 	// Game loop
 	while (!glfwWindowShouldClose(window))
@@ -538,6 +791,7 @@ int main()
 
 		glm::mat4 model(1);
 		glm::mat4 tmp = glm::mat4(1);
+		glm::mat4 tmpLucario = glm::mat4(1);
 
 		model = glm::mat4(1);
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
@@ -845,11 +1099,6 @@ int main()
 		model = glm::mat4(1);
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		escaleras1.Draw(lightingShader);
-
-		model = glm::mat4(1);
-		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		fuente1.Draw(lightingShader);
 
 		model = glm::mat4(1);
@@ -905,6 +1154,76 @@ int main()
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		porygonPataIzq.Draw(lightingShader);
 
+		model = glm::mat4(1);
+		model = glm::translate(glm::mat4(1.0f), glm::vec3(movPokebola_x - 23.094, movPokebola_y + 1.4, movPokebola_z + 25.422));
+		model = glm::rotate(model, glm::radians(rotPokebola), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		pokebola.Draw(lightingShader);
+
+		// Lucario
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(-16.382, movLucario + 9.797, 11.076));
+		tmp = model = glm::rotate(model, glm::radians(rotCuerpo), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		cuerpoLucario.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(tmp, glm::vec3(-0.128, 1.18, -0.207));
+		model = glm::rotate(model, glm::radians(rotCabezaY), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(rotCabezaZ), glm::vec3(1.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		cabezaLucario.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(tmp, glm::vec3(-0.804, -1.471, 0.476));
+		model = glm::rotate(model, glm::radians(rotPiernaDer), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		piernaDerLucario.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(tmp, glm::vec3(0.676, -1.757, -0.364));
+		model = glm::rotate(model, glm::radians(rotPiernaIzq), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		piernaIzqLucario.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(tmp, glm::vec3(-0.604, 0.595, 0.151));
+		model = glm::rotate(model, glm::radians(rotAbDer), glm::vec3(1.0f, 0.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(-0.831, 0.0f, 0.8));
+		model = glm::rotate(model, glm::radians(45.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		tmpLucario = model = glm::rotate(model, glm::radians(rotBrazoDer), glm::vec3(1.0f, 0.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(-45.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(0.831, 0.0f, -0.8));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		antebrazoDerLucario.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(tmpLucario, glm::vec3(0.0f, 0.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(-45.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		brazoDerLucario.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(tmp, glm::vec3(0.287, 0.642, -0.66));
+		tmpLucario = model = glm::rotate(model, glm::radians(rotAbIzq), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		antebrazoIzqLucario.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(tmpLucario, glm::vec3(0.542, -0.953, -0.233));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		brazoIzqLucario.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(movEsfera_x - 19.892, movEsfera_y + 11.107, movEsfera_z + 13.833));
+		model = glm::rotate(model, glm::radians(rotEsfera), glm::vec3(1.0f, 1.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		esfera.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		plataforma.Draw(lightingShader);
 
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(-23.85, .35, 9));
@@ -1070,6 +1389,21 @@ int main()
 		glBindVertexArray(0);
 		glfwSwapBuffers(window);
 
+		// Draw skybox as last
+		glDepthFunc(GL_LEQUAL);  // Change depth function so depth test passes when values are equal to depth buffer's content
+		SkyBoxshader.Use();
+		view = glm::mat4(glm::mat3(camera.GetViewMatrix()));	// Remove any translation component of the view matrix
+		glUniformMatrix4fv(glGetUniformLocation(SkyBoxshader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
+		glUniformMatrix4fv(glGetUniformLocation(SkyBoxshader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
+
+		// skybox cube
+		glBindVertexArray(skyboxVAO);
+		glActiveTexture(GL_TEXTURE1);
+		glBindTexture(GL_TEXTURE_CUBE_MAP, cubemapTexture);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		glBindVertexArray(0);
+		glDepthFunc(GL_LESS); // Set depth function back to default
+		glfwSwapBuffers(window);
 
 	}
 
@@ -1301,6 +1635,213 @@ void DoMovement()
 		lightColor2.x = 0;
 	}
 
+	// Animación de Porygon
+	if (animPory)
+	{
+		if (spritePory == 1)
+		{
+			rotPataDerP += 1.0f;
+			rotPataIzqP -= 1.0f;
+			rotColaP += 1.0f;
+			if (rotPataDerP >= 45.0f && rotPataIzqP <= 45.0f && rotColaP >= 45.0f)
+				spritePory++;
+		}
+
+		if (spritePory == 2)
+		{
+			rotPataDerP -= 1.0f;
+			rotPataIzqP += 1.0f;
+			rotColaP -= 1.0f;
+			if (rotPataDerP <= -45.0f && rotPataIzqP >= -45.0f && rotColaP <= -45.0f)
+				spritePory--;
+		}
+
+		if (rutaPory == 0)
+		{
+			movPory_y += 0.1f;
+			if (movPory_y >= 13.426)
+				rutaPory = 1;
+		}
+
+		if (rutaPory == 1)
+		{
+			movPory_z += 0.1f;
+			if (movPory_z >= 7.131)
+				rutaPory = 2;
+		}
+
+		if (rutaPory == 2)
+		{
+			orienta_Pory += 1.0f;
+			if (orienta_Pory >= 90.0f)
+				rutaPory = 3;
+		}
+
+		if (rutaPory == 3)
+		{
+			movPory_x += 0.1f;
+			if (movPory_x >= 14.356)
+				rutaPory = 4;
+
+		}
+
+		if (rutaPory == 4)
+		{
+			orienta_Pory += 1.0f;
+			if (orienta_Pory >= 180.0f)
+				rutaPory = 5;
+		}
+
+		if (rutaPory == 5)
+		{
+			movPory_z -= 0.1f;
+			if (movPory_z <= -12.528)
+				rutaPory = 6;
+		}
+
+		if (rutaPory == 6)
+		{
+			orienta_Pory += 1.0f;
+			if (orienta_Pory >= 270.0f)
+				rutaPory = 7;
+		}
+
+		if (rutaPory == 7)
+		{
+			movPory_x -= 0.1f;
+			if (movPory_x <= -13.941)
+				rutaPory = 8;
+		}
+
+		if (rutaPory == 8)
+		{
+			orienta_Pory += 1.0f;
+			if (orienta_Pory >= 360.0f)
+			{
+				orienta_Pory = 0;
+				rutaPory = 9;
+			}
+		}
+
+		if (rutaPory == 9)
+		{
+			movPory_z += 0.1f;
+			if (movPory_z >= -5.467)
+				rutaPory = 10;
+		}
+
+		if (rutaPory == 10)
+		{
+			movPory_y += 0.1f;
+			if (movPory_y >= 20.761)
+				rutaPory = 11;
+		}
+
+		if (rutaPory == 11)
+		{
+			orienta_Pory += 1.0f;
+			if (orienta_Pory >= 90.0f)
+				rutaPory = 12;
+		}
+
+		if (rutaPory == 12)
+		{
+			movPory_x += 0.1f;
+			if (movPory_x >= 0.0)
+				rutaPory = 13;
+		}
+
+		if (rutaPory == 13)
+		{
+			orienta_Pory -= 1.0f;
+			if (orienta_Pory <= 0.0f)
+				rutaPory = 14;
+		}
+
+		if (rutaPory == 14)
+		{
+			movPory_z += 0.1f;
+			if (movPory_z >= 0.0)
+				rutaPory = 15;
+		}
+
+		if (rutaPory == 15)
+		{
+			movPory_y -= 0.1f;
+			if (movPory_y <= 0.0)
+			{
+				rutaPory = 0;
+				movPory_x = 0.0f;
+				movPory_y = 0.0f;
+				movPory_z = 0.0f;
+				rotPataDerP = 0.0f;
+				rotPataIzqP = 0.0f;
+				rotColaP = 0.0f;
+				animPory = false;
+			}
+		}
+	}
+
+	// Animación de pokebola
+	if (animPokebola)
+	{
+		rotPokebola -= 8.85f;
+		// ANIMACION DE TIRO PARABÓLICO
+
+		i += 0.012f;
+		movPokebola_x = 0 + i * v * cos(ang * n / 180);
+		movPokebola_y = 0 + (i * v * sin(ang * n / 180) - (g * i * i) / 2);
+		if (movPokebola_y <= 0.0f)
+		{
+			i = 0.0f;
+			animPokebola = false;
+		}
+	}
+
+	// Animación de Lucario (Esfera y plataforma)
+	if (animLucario)
+	{
+		movEsfera_x = 10.0f * sin(varLucario);
+		movEsfera_z = 10.0f * cos(varLucario);
+		varLucario += 0.01f;
+		rotEsfera += 10.0f;
+	}
+
+	// Animacion por keyframes
+	if (play)
+	{
+		if (i_curr_steps >= i_max_steps) //end of animation between frames?
+		{
+			playIndex++;
+			if (playIndex > FrameIndex - 2)	//end of total animation?
+			{
+				std::cout << "Animation ended" << std::endl;
+				//printf("termina anim\n");
+				playIndex = 0;
+				play = false;
+			}
+			else //Next frame interpolations
+			{
+				i_curr_steps = 0; //Reset counter
+				//Interpolation
+				interpolation();
+			}
+		}
+		else
+		{
+			rotCuerpo += rotCuerpoInc;
+			rotCabezaY += rotCabezaYInc;
+			rotCabezaZ += rotCabezaZInc;
+			rotPiernaDer += rotPiernaDerInc;
+			rotPiernaIzq += rotPiernaIzqInc;
+			rotAbDer += rotAbDerInc;
+			rotBrazoDer += rotBrazoDerInc;
+			rotAbIzq += rotAbIzqInc;
+
+			i_curr_steps++;
+		}
+	}
+
 }
 
 
@@ -1329,6 +1870,97 @@ void animacion()
 
 void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
+	// Cargar Animaciones keyframes
+	if (glfwGetKey(window, GLFW_KEY_F5) == GLFW_PRESS) {
+		cargarAnimacionKeyframes(nombreArchivo1);
+		printf("Archivo cargado correctamente\n");
+	}
+
+	if (glfwGetKey(window, GLFW_KEY_F6) == GLFW_PRESS) {
+		cargarAnimacionKeyframes(nombreArchivo2);
+		printf("Archivo cargado correctamente\n");
+	}
+
+	if (glfwGetKey(window, GLFW_KEY_F7) == GLFW_PRESS) {
+		cargarAnimacionKeyframes(nombreArchivo3);
+		printf("Archivo cargado correctamente\n");
+	}
+
+	if (glfwGetKey(window, GLFW_KEY_F8) == GLFW_PRESS) {
+		cargarAnimacionKeyframes(nombreArchivo4);
+		printf("Archivo cargado correctamente\n");
+	}
+
+	if (glfwGetKey(window, GLFW_KEY_F9) == GLFW_PRESS) {
+		cargarAnimacionKeyframes(nombreArchivo5);
+		printf("Archivo cargado correctamente\n");
+	}
+
+	if (glfwGetKey(window, GLFW_KEY_F10) == GLFW_PRESS) {
+		cargarAnimacionKeyframes(nombreArchivo6);
+		printf("Archivo cargado correctamente\n");
+	}
+
+	if (glfwGetKey(window, GLFW_KEY_F11) == GLFW_PRESS) {
+		cargarAnimacionKeyframes(nombreArchivo7);
+		printf("Archivo cargado correctamente\n");
+	}
+
+	if (glfwGetKey(window, GLFW_KEY_0) == GLFW_PRESS) {
+		cargarAnimacionKeyframes(nombreArchivo8);
+		printf("Archivo cargado correctamente\n");
+	}
+
+	//To play KeyFrame animation 
+	if (key == GLFW_KEY_P && action == GLFW_PRESS)
+	{
+		if (play == false && (FrameIndex > 1))
+		{
+			std::cout << "Play animation" << std::endl;
+			resetElements();
+			//First Interpolation				
+			interpolation();
+
+			play = true;
+			playIndex = 0;
+			i_curr_steps = 0;
+		}
+		else
+		{
+			play = false;
+			std::cout << "Not enough Key Frames" << std::endl;
+		}
+	}
+
+	// Animacion Lucario
+	if (key == GLFW_KEY_ENTER && action == GLFW_PRESS)
+		animLucario ^= true;
+
+	// Animación Pokebola
+	if (key == GLFW_KEY_F3 && action == GLFW_PRESS)
+		animPokebola ^= true;
+	if (key == GLFW_KEY_F4 && action == GLFW_PRESS) {
+		i = 0.0;
+		rotPokebola = 0.0f;
+		movPokebola_x = 0.0f;
+		movPokebola_y = 0.0f;
+		animPokebola = false;
+	}
+
+	// Animación Porygon
+	if (key == GLFW_KEY_F1 && action == GLFW_PRESS)
+		animPory ^= true;
+	if (key == GLFW_KEY_F2 && action == GLFW_PRESS) {
+		rutaPory = 0;
+		movPory_x = 0.0f;
+		movPory_y = 0.0f;
+		movPory_z = 0.0f;
+		orienta_Pory = 0.0f;
+		rotPataDerP = 0.0f;
+		rotPataIzqP = 0.0f;
+		rotColaP = 0.0f;
+		animPory = false;
+	}
 
 	if (GLFW_KEY_ESCAPE == key && GLFW_PRESS == action)
 	{
