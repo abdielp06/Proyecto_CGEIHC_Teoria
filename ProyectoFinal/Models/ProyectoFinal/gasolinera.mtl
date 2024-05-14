@@ -83,6 +83,7 @@ illum 4
 Kd 0.00 0.00 0.00
 Ka 0.59 0.59 0.59
 Tf 1.00 1.00 1.00
+map_Kd tolldo2.jpg
 Ni 1.00
 Ks 0.00 0.00 0.00
 Ns 0.00
@@ -414,6 +415,22 @@ map_Kd gas_stationdiffusemap.jpg
 Ni 1.00
 Ks 0.00 0.00 0.00
 Ns 0.00
+newmtl gasolinera:gasFBXASC032stationSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+map_Kd gas_stationdiffusemap.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl gasolinera:lambert48SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd toldo2.jpg
+Ni 1.00
 newmtl initialShadingGroup
 illum 4
 Kd 0.00 0.00 0.00
@@ -532,13 +549,6 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd Local_1_Front.jpg
 Ni 1.00
-newmtl lambert32SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd fnxsw-bg-1920x1080-909fdea719a0.jpg
-Ni 1.00
 newmtl lambert33SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -629,6 +639,20 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd toldo2.jpg
+Ni 1.00
+newmtl lambert49SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd luivouton.jpg
+Ni 1.00
+newmtl lambert50SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd gucci.jpg
 Ni 1.00
 newmtl pantalla_tele:lambert3SG
 illum 4
