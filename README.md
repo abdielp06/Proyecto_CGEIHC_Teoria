@@ -3,5 +3,4 @@
 ## **Objetivo**
 El alumno deberá aplicar y demostrar los conocimientos adquiridos durante todo el curso.
 ## **Descripción**
-El alumno deberá seleccionar una fachada y un espacio que pueden ser realeso ficticios y presentar imágenes de referencia de dichos espacios para su
-recreación 3D en OpenGL.
+El alumno deberá realizar un centro comercial para su recreación 3D en OpenGL.
