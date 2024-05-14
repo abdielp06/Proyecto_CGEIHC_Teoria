@@ -1,0 +1,400 @@
+newmtl Building_Bottom_albedo_1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Building_Bottom_albedo.jpg
+Ni 1.00
+newmtl Building_Top_albedo_1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Building_Top_albedo.jpg
+Ni 1.00
+newmtl CentroPokemon:PC_Material
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PC_Texture.tga.png
+map_Ka PC_Texture.tga.png
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl CentroPokemon:lambert1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd lambert1_albedo.jpeg
+map_Ka lambert1_albedo.jpeg
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl Detail_Objects_albedo_1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Detail_Objects_albedo.jpg
+Ni 1.00
+newmtl Fountain:Fountain:Fountain:Fountain:lambert2SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Fountain:Fountain:Fountain1:Fountain:Fountain:Fountain:lambert2SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Fountain:Fountain:Fountain1:Fountain:tinker:color_2829873
+illum 4
+Kd 0.17 0.18 0.19
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Fountain:Fountain:Fountain1:Fountain:tinker:color_12568524
+illum 4
+Kd 1.09 1.13 1.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Fountain:Fountain:Fountain2:Fountain:Fountain1:Fountain:Fountain:Fountain:lambert2SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Fountain:Fountain:Fountain2:Fountain:Fountain1:Fountain:tinker:color_2829873
+illum 4
+Kd 0.17 0.18 0.19
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Fountain:Fountain:Fountain2:Fountain:Fountain1:Fountain:tinker:color_12568524
+illum 4
+Kd 1.09 1.13 1.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Fountain:Fountain:lambert2SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Fountain:Fountain:oceanShader1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl Fountain:Fountain:tinker:color_2829873
+illum 4
+Kd 0.17 0.18 0.19
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Fountain:Fountain:tinker:color_12568524
+illum 4
+Kd 1.09 1.13 1.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Fountain:oceanShader3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl Fountain1:Fountain:oceanShader1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl Gubi_Ronde_Pendant_Lamp_LowPoly:default1
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Gubi_Ronde_Pendant_Lamp_LowPoly1:default1
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Gubi_Ronde_Pendant_Lamp_LowPoly2:default1
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl StreetLamp:Glass
+illum 4
+Kd 0.80 0.76 0.46
+Ka 0.00 0.00 0.00
+Tf 0.22 0.22 0.22
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 96.08
+newmtl Streetlight_LowRes:Streetlight_LowRes5:pasted__pasted__lambert16SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl Streetlight_LowRes:Streetlight_LowRes5:pasted__pasted__lambert17SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl Streetlight_LowRes:Streetlight_LowRes6:pasted__pasted__lambert16SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl Streetlight_LowRes:Streetlight_LowRes6:pasted__pasted__lambert17SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl Streetlight_LowRes:Streetlight_LowRes7:pasted__pasted__lambert16SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl Streetlight_LowRes:Streetlight_LowRes7:pasted__pasted__lambert17SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl Streetlight_LowRes:pasted__lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl Streetlight_LowRes:pasted__lambert17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl Streetlight_LowRes:pasted__pasted__lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl Streetlight_LowRes:pasted__pasted__lambert16SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl Streetlight_LowRes:pasted__pasted__lambert16SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl Streetlight_LowRes:pasted__pasted__lambert17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl Streetlight_LowRes:pasted__pasted__lambert17SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl Streetlight_LowRes:pasted__pasted__lambert17SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl boxwood_plant05:lambert1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd vidrio.jpg
+Ni 1.00
+newmtl boxwood_plant13:lambert1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd marmol_maceta.png
+Ni 1.00
+newmtl colors_1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd colors.jpg
+Ni 1.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd glass-163865_1280.jpg
+Ni 1.00
+newmtl lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd glass-163865_1280.jpg
+Ni 1.00
+newmtl lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd foto-textura-superficie-grava_125540-2921.png
+Ni 1.00
+newmtl lambert6SG
+illum 4
+Kd 0.00 0.38 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tierra.jpg
+Ni 1.00
+newmtl lambert9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd piso.jpg
+Ni 1.00
+newmtl lambert10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 70-NIRVANA-RAME.jpg
+Ni 1.00
+newmtl lambert11SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura__interna.jpg
+Ni 1.00
+newmtl lambert14SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fondo-plateado-metalizado-texturado_53876-90845.png
+Ni 1.00
+newmtl lambert15SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd depositphotos_34867931-stock-photo-cement-background-with-a-texture.jpg
+Ni 1.00
+newmtl lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl lambert17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl lambert18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 00.png
+Ni 1.00
+newmtl lambert21SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura-cemento_1194-6501.png
+Ni 1.00
+newmtl lambert22SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sp-1009f-vidrio-spectrum-system-96.jpg
+Ni 1.00
+newmtl pasted__lambert18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 00.png
+Ni 1.00
+newmtl pasted__pasted__lambert18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 00.png
+Ni 1.00
+newmtl tinker:color_2829873
+illum 4
+Kd 0.17 0.18 0.19
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl tinker:color_12568524
+illum 4
+Kd 1.09 1.13 1.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00

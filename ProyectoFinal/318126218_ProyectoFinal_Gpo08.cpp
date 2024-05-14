@@ -26,6 +26,9 @@
 #include "Model.h"
 #include "Texture.h"
 
+// Biblioteca de audio
+#include <irrKlang.h>
+
 // Para permitir lectura de archivos
 #pragma warning(disable:4996)
 
@@ -99,6 +102,10 @@ float giro = 0;
 float giroComp = 0;
 
 //termina auto
+
+// Cambiar música
+irrklang::ISoundEngine* SoundEngine;
+bool    switchMusic = false;
 
 // Archivos de keyframes
 char nombreArchivo1[] = "keyframes.txt";
@@ -352,6 +359,10 @@ int main()
 
 	// OpenGL options
 	glEnable(GL_DEPTH_TEST);
+
+	// configure music
+	SoundEngine = irrklang::createIrrKlangDevice();
+	SoundEngine->play2D("Mesagoza (Riding) Pokemon Scarlet and Violet OST.mp3", true);
 
 	// Declaracion y carga de los Shaders y modelos
 	Shader lightingShader("Shaders/lighting.vs", "Shaders/lighting.frag");
@@ -1844,6 +1855,21 @@ void animacion()
 
 void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
+	// Para cambiar música
+	if (glfwGetKey(window, GLFW_KEY_BACKSPACE) == GLFW_PRESS) {
+		switchMusic ^= true;
+		if (switchMusic)
+		{
+			SoundEngine->stopAllSounds();
+			SoundEngine->play2D("Pokemon Black & White Music_ Driftveil City Music (320).mp3", true);
+		}
+		else
+		{
+			SoundEngine->stopAllSounds();
+			SoundEngine->play2D("Taylor Swift - I Can Do It With a Broken Heart (Official Lyric Video).mp3", true);
+		}
+	}
+
 	// Cargar Animaciones keyframes
 	if (glfwGetKey(window, GLFW_KEY_F5) == GLFW_PRESS) {
 		cargarAnimacionKeyframes(nombreArchivo1);

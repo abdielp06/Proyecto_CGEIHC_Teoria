@@ -1,0 +1,39 @@
+newmtl TropicalFish05:___Default
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TropicalFish05.jpg
+map_Ka TropicalFish05.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl fd8c783843f5_Barra_de_restaurant:base_material
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd fd8c783843f5_Barra_de_restaurant_texture_kd.jpg
+Ni 1.50
+Ks 0.50 0.50 0.50
+Ns 0.06
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd depositphotos_25397381-stock-illustration-smooth-gradient-background-sheet-of.webp.png
+Ni 1.00
+newmtl lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd desktop-wallpaper-5-solid-gray-light-grey-plain.png
+Ni 1.00

@@ -1,0 +1,1255 @@
+newmtl Building_Bottom_albedo_1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Building_Bottom_albedo.jpg
+Ni 1.00
+newmtl Building_Top_albedo_1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Building_Top_albedo.jpg
+Ni 1.00
+newmtl CentroPokemon:PC_Material
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PC_Texture.tga.png
+map_Ka PC_Texture.tga.png
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl CentroPokemon:lambert1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd lambert1_albedo.jpeg
+map_Ka lambert1_albedo.jpeg
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl Detail_Objects_albedo_1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Detail_Objects_albedo.jpg
+Ni 1.00
+newmtl Fachada:lambert10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 70-NIRVANA-RAME.jpg
+Ni 1.00
+newmtl Fachada:lambert11SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura__interna.jpg
+Ni 1.00
+newmtl Fountain:Fountain:Fountain1:Fountain:Fountain:Fountain:lambert2SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Fountain:Fountain:Fountain1:Fountain:tinker:color_2829873
+illum 4
+Kd 0.17 0.18 0.19
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Fountain:Fountain:Fountain1:Fountain:tinker:color_12568524
+illum 4
+Kd 1.09 1.13 1.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Fountain1:Fountain:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TTPD.jpg
+Ni 1.00
+newmtl Object01SG14
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl Sea:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd image.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl Sea1:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd image.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl StreetLamp:Glass
+illum 4
+Kd 0.80 0.76 0.46
+Ka 0.00 0.00 0.00
+Tf 0.22 0.22 0.22
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 96.08
+newmtl StreetLamp:Material_001
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Recycling_Bin_Texture.png
+Ni 1.00
+newmtl Streetlight_LowRes:pasted__lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl Streetlight_LowRes:pasted__lambert17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl Streetlight_LowRes:pasted__pasted__lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl Streetlight_LowRes:pasted__pasted__lambert16SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl Streetlight_LowRes:pasted__pasted__lambert17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl Streetlight_LowRes:pasted__pasted__lambert17SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl Streetlight_LowRes1:pasted__pasted__lambert16SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl Streetlight_LowRes1:pasted__pasted__lambert17SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl Streetlight_LowRes2:pasted__pasted__lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl Streetlight_LowRes2:pasted__pasted__lambert17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl Streetlight_LowRes4:pasted__lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl Streetlight_LowRes4:pasted__lambert17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl asfalto1:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd foto-textura-superficie-grava_125540-2921.png
+Ni 1.00
+newmtl asfalto2:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd foto-textura-superficie-grava_125540-2921.png
+Ni 1.00
+newmtl bancas:bench_wood
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood049_2K_Color.jpg
+map_Ka Wood049_2K_Color.jpg
+bump  -bm 0 Wood049_2K_Normal.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+map_Ks Wood049_2K_Roughness.jpg
+Ns 10.00
+newmtl bancas1:bench_wood
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood049_2K_Color.jpg
+map_Ka Wood049_2K_Color.jpg
+bump  -bm 0 Wood049_2K_Normal.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+map_Ks Wood049_2K_Roughness.jpg
+Ns 10.00
+newmtl bancas2:bench_wood
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood049_2K_Color.jpg
+map_Ka Wood049_2K_Color.jpg
+bump  -bm 0 Wood049_2K_Normal.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+map_Ks Wood049_2K_Roughness.jpg
+Ns 10.00
+newmtl bancas3:bench_wood
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood049_2K_Color.jpg
+map_Ka Wood049_2K_Color.jpg
+bump  -bm 0 Wood049_2K_Normal.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+map_Ks Wood049_2K_Roughness.jpg
+Ns 10.00
+newmtl bancas4:bench_wood
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood049_2K_Color.jpg
+map_Ka Wood049_2K_Color.jpg
+bump  -bm 0 Wood049_2K_Normal.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+map_Ks Wood049_2K_Roughness.jpg
+Ns 10.00
+newmtl bancas5:bench_wood
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood049_2K_Color.jpg
+map_Ka Wood049_2K_Color.jpg
+bump  -bm 0 Wood049_2K_Normal.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+map_Ks Wood049_2K_Roughness.jpg
+Ns 10.00
+newmtl bancas6:bench_wood
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood049_2K_Color.jpg
+map_Ka Wood049_2K_Color.jpg
+bump  -bm 0 Wood049_2K_Normal.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+map_Ks Wood049_2K_Roughness.jpg
+Ns 10.00
+newmtl bancas7:bench_wood
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood049_2K_Color.jpg
+map_Ka Wood049_2K_Color.jpg
+bump  -bm 0 Wood049_2K_Normal.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+map_Ks Wood049_2K_Roughness.jpg
+Ns 10.00
+newmtl bancas8:bench_wood
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood049_2K_Color.jpg
+map_Ka Wood049_2K_Color.jpg
+bump  -bm 0 Wood049_2K_Normal.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+map_Ks Wood049_2K_Roughness.jpg
+Ns 10.00
+newmtl bancas9:bench_wood
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood049_2K_Color.jpg
+map_Ka Wood049_2K_Color.jpg
+bump  -bm 0 Wood049_2K_Normal.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+map_Ks Wood049_2K_Roughness.jpg
+Ns 10.00
+newmtl bancas10:bench_wood
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood049_2K_Color.jpg
+map_Ka Wood049_2K_Color.jpg
+bump  -bm 0 Wood049_2K_Normal.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+map_Ks Wood049_2K_Roughness.jpg
+Ns 10.00
+newmtl boxwood_plant05:lambert1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd vidrio.jpg
+Ni 1.00
+newmtl boxwood_plant13:lambert1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd marmol_maceta.png
+Ni 1.00
+newmtl boxwood_plant23:lambert1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd marmol_maceta.png
+Ni 1.00
+newmtl boxwood_plant26:lambert1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd marmol_maceta.png
+Ni 1.00
+newmtl boxwood_plant29:lambert1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd marmol_maceta.png
+Ni 1.00
+newmtl boxwood_plant32:lambert1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd marmol_maceta.png
+Ni 1.00
+newmtl boxwood_plant35:lambert1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd marmol_maceta.png
+Ni 1.00
+newmtl colors_1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd colors.jpg
+Ni 1.00
+newmtl gasFBXASC032stationSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+map_Kd gas_stationdiffusemap.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd glass-163865_1280.jpg
+Ni 1.00
+newmtl lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd glass-163865_1280.jpg
+Ni 1.00
+newmtl lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd hoja_verde.jpg
+Ni 1.00
+newmtl lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tierra.jpg
+Ni 1.00
+newmtl lambert9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd piso-gris.jpeg
+Ni 1.00
+newmtl lambert14SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fondo-plateado-metalizado-texturado_53876-90845.png
+Ni 1.00
+newmtl lambert15SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd banqueta.jpg
+Ni 1.00
+newmtl lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl lambert17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl lambert18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 00.png
+Ni 1.00
+newmtl lambert21SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura-cemento_1194-6501.png
+Ni 1.00
+newmtl lambert23SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd banqueta.jpg
+Ni 1.00
+newmtl lambert24SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_6_Front.jpg
+Ni 1.00
+newmtl lambert25SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl lambert26SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl lambert28SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_1_Front.jpg
+Ni 1.00
+newmtl lambert33SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd panini.png
+Ni 1.00
+newmtl lambert34SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd el-palacio-de-hierro-logo-3897B57EDE-seeklogo.com.png
+Ni 1.00
+newmtl lambert35SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd la-noche-estrellada1-1586872678.jpg
+Ni 1.00
+newmtl lambert36SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd CitiBanamex-Portada.jpg
+Ni 1.00
+newmtl lambert37SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd total-play.jpg
+Ni 1.00
+newmtl lambert38SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pokemon.jpg
+Ni 1.00
+newmtl lambert39SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sears.png
+Ni 1.00
+newmtl lambert40SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tangamanga.jpg
+Ni 1.00
+newmtl lambert41SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd share-default.8bf3102623e935e7bc126df36b956b98.jpg
+Ni 1.00
+newmtl lambert42SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd HBO_Max_Logo.png
+Ni 1.00
+newmtl lambert43SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Recycling_Bin_Texture.png
+Ni 1.00
+newmtl lambert47SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd images.png
+Ni 1.00
+newmtl lambert48SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd toldo2.jpg
+Ni 1.00
+newmtl lambert49SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd luivouton.jpg
+Ni 1.00
+newmtl lambert50SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd gucci.jpg
+Ni 1.00
+newmtl pantalla_tele:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd estatica_tele.PNG
+Ni 1.00
+newmtl papitas9:initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tubo.png
+Ni 1.00
+newmtl papitas9:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd doritos-9.png
+Ni 1.00
+newmtl papitas10:initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tubo.png
+Ni 1.00
+newmtl papitas10:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd doritos-9.png
+Ni 1.00
+newmtl papitas11:initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tubo.png
+Ni 1.00
+newmtl papitas11:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd doritos-9.png
+Ni 1.00
+newmtl papitas12:initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tubo.png
+Ni 1.00
+newmtl papitas12:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd doritos-9.png
+Ni 1.00
+newmtl pasted__lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd hoja_verde.jpg
+Ni 1.00
+newmtl pasted__lambert6SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd hoja_verde.jpg
+Ni 1.00
+newmtl pasted__lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tierra.jpg
+Ni 1.00
+newmtl pasted__lambert7SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tierra.jpg
+Ni 1.00
+newmtl pasted__lambert14SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fondo-plateado-metalizado-texturado_53876-90845.png
+Ni 1.00
+newmtl pasted__lambert14SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fondo-plateado-metalizado-texturado_53876-90845.png
+Ni 1.00
+newmtl pasted__lambert14SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fondo-plateado-metalizado-texturado_53876-90845.png
+Ni 1.00
+newmtl pasted__lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl pasted__lambert16SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl pasted__lambert17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd abstract-yellow-texture-background-with-white-light-free-photo.jpg
+Ni 1.00
+newmtl pasted__lambert18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 00.png
+Ni 1.00
+newmtl pasted__lambert24SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_1_Front.jpg
+Ni 1.00
+newmtl pasted__lambert24SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_5_Front.jpg
+Ni 1.00
+newmtl pasted__lambert25SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__lambert25SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__lambert25SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__lambert26SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__lambert26SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__lambert26SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__lambert47SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd images.png
+Ni 1.00
+newmtl pasted__lambert47SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd images.png
+Ni 1.00
+newmtl pasted__pasted__lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd hoja_verde.jpg
+Ni 1.00
+newmtl pasted__pasted__lambert6SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd hoja_verde.jpg
+Ni 1.00
+newmtl pasted__pasted__lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tierra.jpg
+Ni 1.00
+newmtl pasted__pasted__lambert7SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tierra.jpg
+Ni 1.00
+newmtl pasted__pasted__lambert14SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fondo-plateado-metalizado-texturado_53876-90845.png
+Ni 1.00
+newmtl pasted__pasted__lambert14SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fondo-plateado-metalizado-texturado_53876-90845.png
+Ni 1.00
+newmtl pasted__pasted__lambert14SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fondo-plateado-metalizado-texturado_53876-90845.png
+Ni 1.00
+newmtl pasted__pasted__lambert14SG5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fondo-plateado-metalizado-texturado_53876-90845.png
+Ni 1.00
+newmtl pasted__pasted__lambert16SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl pasted__pasted__lambert18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 00.png
+Ni 1.00
+newmtl pasted__pasted__lambert24SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_3_Front.jpg
+Ni 1.00
+newmtl pasted__pasted__lambert24SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_2_Front.jpg
+Ni 1.00
+newmtl pasted__pasted__lambert24SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_1_Front.jpg
+Ni 1.00
+newmtl pasted__pasted__lambert25SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__pasted__lambert25SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__pasted__lambert26SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__pasted__lambert26SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__pasted__lambert47SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd images.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert6SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd hoja_verde.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert7SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tierra.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert14SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fondo-plateado-metalizado-texturado_53876-90845.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert14SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fondo-plateado-metalizado-texturado_53876-90845.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert16SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-negro0.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert24SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_5_Front.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert24SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_2_Front.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert24SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_1_Front.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert24SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_5_Front.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert25SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert25SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert25SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert26SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert26SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert26SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert47SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd images.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__lambert14SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fondo-plateado-metalizado-texturado_53876-90845.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__lambert24SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_3_Front.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__lambert24SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_2_Front.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__lambert25SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__lambert25SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__lambert26SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__lambert26SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__lambert24SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_1_Front.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__lambert24SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_5_Front.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__lambert25SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__lambert25SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__lambert26SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__lambert26SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert24SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_4_Front.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert24SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_3_Front.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert25SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert25SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert26SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert26SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert24SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Local_1_Front.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert25SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales2_Superior.jpg
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert26SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Locales4_Exterior.jpg
+Ni 1.00
+newmtl pasted__phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd baños.jpg
+Ni 1.00
+newmtl phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd baños.jpg
+Ni 1.00
