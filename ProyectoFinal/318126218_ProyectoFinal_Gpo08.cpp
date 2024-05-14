@@ -315,7 +315,7 @@ int main()
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
 	// Create a GLFWwindow object that we can use for GLFW's functions
-	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "PROYECTO FINAL - Centro Comercial - Equipo 9 ", nullptr, nullptr);
+	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "PROYECTO FINAL - NARUTO - 318126218 ", nullptr, nullptr);
 
 	if (nullptr == window)
 	{
@@ -453,7 +453,7 @@ int main()
 	Model esfera((char*)"Models/Lucario/auraEsfera.obj");
 	Model plataforma((char*)"Models/Lucario/Plataforma.obj");
 
-
+	//Inicialización de KeyFrames
 	for (int i = 0; i < MAX_FRAMES; i++)
 	{
 		KeyFrame[i].rotCuerpo = 0;
@@ -511,6 +511,8 @@ int main()
 		-1.0f, -1.0f,  1.0f,
 		1.0f, -1.0f,  1.0f
 	};
+
+
 
 
 	// Set up vertex data (and buffer(s)) and attribute pointers
@@ -587,7 +589,6 @@ int main()
 		glm::vec3(-1.3f,  1.0f, -1.5f)
 	};
 
-	// First, set the container's VAO (and VBO)
 	GLuint VBO, VAO, EBO;
 	glGenVertexArrays(1, &VAO);
 	glGenBuffers(1, &VBO);
@@ -603,11 +604,9 @@ int main()
 	// Position attribute
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)0);
 	glEnableVertexAttribArray(0);
-
 	// Normals attribute
 	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)(3 * sizeof(GLfloat)));
 	glEnableVertexAttribArray(1);
-
 	// Texture Coordinate attribute
 	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)(6 * sizeof(GLfloat)));
 	glEnableVertexAttribArray(2);
@@ -617,46 +616,12 @@ int main()
 	GLuint lightVAO;
 	glGenVertexArrays(1, &lightVAO);
 	glBindVertexArray(lightVAO);
-
 	// We only need to bind to the VBO (to link it with glVertexAttribPointer), no need to fill it; the VBO's data already contains all we need.
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-
 	// Set the vertex attributes (only position data for the lamp))
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)0); // Note that we skip over the other data in our buffer object (we don't need the normals/textures, only positions).
 	glEnableVertexAttribArray(0);
 	glBindVertexArray(0);
-
-	// Load textures
-	GLuint texture1, texture2;
-	glGenTextures(1, &texture1);
-	glGenTextures(1, &texture2);
-
-	int textureWidth, textureHeight, nrChannels;
-	stbi_set_flip_vertically_on_load(true);
-	unsigned char* image;
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST_MIPMAP_NEAREST);
-
-	// Diffuse map
-	image = stbi_load("images/TexturesCom_GravelCobble0019_7_S.jpg", &textureWidth, &textureHeight, &nrChannels, 0);
-	glBindTexture(GL_TEXTURE_2D, texture1);
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, textureWidth, textureHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
-	glGenerateMipmap(GL_TEXTURE_2D);
-	if (image)
-	{
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, textureWidth, textureHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
-		glGenerateMipmap(GL_TEXTURE_2D);
-	}
-
-	else
-	{
-		std::cout << "Failed to load texture" << std::endl;
-	}
-
-	stbi_image_free(image);
-
 
 	// Set texture units
 	lightingShader.Use();
@@ -806,33 +771,13 @@ int main()
 		model = glm::mat4(1);
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		banamex.Draw(lightingShader);
-
-		model = glm::mat4(1);
-		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		EE1.Draw(lightingShader);
-
-		model = glm::mat4(1);
-		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		EE2.Draw(lightingShader);
-
-		model = glm::mat4(1);
-		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		EE3.Draw(lightingShader);
-
-		model = glm::mat4(1);
-		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		EE4.Draw(lightingShader);
+		baños.Draw(lightingShader);
 
 		model = glm::mat4(1);
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		bdb1.Draw(lightingShader);
-
+		
 		model = glm::mat4(1);
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -861,12 +806,14 @@ int main()
 		model = glm::mat4(1);
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		baños.Draw(lightingShader);
+		gasolinera.Draw(lightingShader);
+
+
 
 		model = glm::mat4(1);
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		gasolinera.Draw(lightingShader);
+		banamex.Draw(lightingShader);
 
 		model = glm::mat4(1);
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
@@ -1099,6 +1046,26 @@ int main()
 		model = glm::mat4(1);
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		EE1.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		EE2.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		EE3.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		EE4.Draw(lightingShader);
+
+		model = glm::mat4(1);
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		fuente1.Draw(lightingShader);
 
 		model = glm::mat4(1);
@@ -1123,6 +1090,7 @@ int main()
 		model = glm::translate(model, glm::vec3(24.04, .28, 13.30));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		puerta.Draw(lightingShader);
+
 
 		// Porygon
 		model = glm::mat4(1);
@@ -1154,6 +1122,7 @@ int main()
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		porygonPataIzq.Draw(lightingShader);
 
+		// Pokebola
 		model = glm::mat4(1);
 		model = glm::translate(glm::mat4(1.0f), glm::vec3(movPokebola_x - 23.094, movPokebola_y + 1.4, movPokebola_z + 25.422));
 		model = glm::rotate(model, glm::radians(rotPokebola), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -1224,6 +1193,7 @@ int main()
 		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		plataforma.Draw(lightingShader);
+
 
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(-23.85, .35, 9));
@@ -1387,7 +1357,7 @@ int main()
 		model = glm::mat4(1);
 		model = glm::translate(model, lightPos);
 		glBindVertexArray(0);
-		glfwSwapBuffers(window);
+
 
 		// Draw skybox as last
 		glDepthFunc(GL_LEQUAL);  // Change depth function so depth test passes when values are equal to depth buffer's content
@@ -1404,6 +1374,10 @@ int main()
 		glBindVertexArray(0);
 		glDepthFunc(GL_LESS); // Set depth function back to default
 		glfwSwapBuffers(window);
+
+
+
+
 
 	}
 
