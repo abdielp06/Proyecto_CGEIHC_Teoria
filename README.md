@@ -1,5 +1,5 @@
 # -------------🎮🕹️ Proyecto Final Teoria 2024-2👾-----------
-## Proyecto base para el proyecto final de computación gráfica interacción humano computadora 
+## Proyecto final de computación gráfica interacción humano computadora 
 ## **Objetivo**
 El alumno deberá aplicar y demostrar los conocimientos adquiridos durante todo el curso.
 ## **Descripción**
