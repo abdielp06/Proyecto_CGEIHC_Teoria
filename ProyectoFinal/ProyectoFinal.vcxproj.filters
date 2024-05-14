@@ -72,7 +72,7 @@
     <None Include="Shaders\animGlobo.vs" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="318126218_ProyectoFinal_Gpo08.cpp">
+    <ClCompile Include="ProyectoFinal-Teoría.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>

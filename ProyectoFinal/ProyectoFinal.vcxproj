@@ -41,7 +41,7 @@
     <None Include="Shaders\SkyBox.vs" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="318126218_ProyectoFinal_Gpo08.cpp" />
+    <ClCompile Include="ProyectoFinal-Teoría.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
